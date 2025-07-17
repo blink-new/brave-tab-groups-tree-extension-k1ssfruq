@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary: 251 84 43;
+  --accent: 79 70 229;
+  --background: 255 255 255;
+  --foreground: 17 24 39;
+  --muted: 249 250 251;
+  --muted-foreground: 107 114 128;
+  --border: 229 231 235;
+  --input: 255 255 255;
+  --ring: 251 84 43;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f8fafc;
+  color: rgb(17, 24, 39);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* PrimeVue component overrides */
+.p-button {
+  font-family: 'Inter', sans-serif;
+}
+
+.p-inputtext {
+  font-family: 'Inter', sans-serif;
+  border-radius: 6px;
+}
+
+.p-scrollpanel .p-scrollpanel-wrapper {
+  border-right: none;
+}
+
+.p-scrollpanel .p-scrollpanel-bar {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 6px;
+}
+
+.p-badge {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  min-width: 20px;
+  height: 20px;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

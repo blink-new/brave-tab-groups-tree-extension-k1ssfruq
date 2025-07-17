@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Groups Tree View",
+  "version": "1.0.0",
+  "description": "A clean, modern browser extension that displays tab groups in an organized tree view interface for better tab management and navigation.",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Tab Groups Tree View",
+    "default_icon": {
+      "16": "favicon.svg",
+      "32": "favicon.svg",
+      "48": "favicon.svg",
+      "128": "favicon.svg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "favicon.svg",
+    "32": "favicon.svg",
+    "48": "favicon.svg",
+    "128": "favicon.svg"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
